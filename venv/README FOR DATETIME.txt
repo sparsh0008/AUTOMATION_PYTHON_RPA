@@ -18,3 +18,8 @@ strftime() - Module
 %b 		- Jan, Feb, Mar ....... Dec
 %B 		- January, February..........December
 %m 	- 01,02,03......12
+.
+.
+.
+.
+many more
