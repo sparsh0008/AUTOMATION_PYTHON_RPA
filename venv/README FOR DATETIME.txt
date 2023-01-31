@@ -21,5 +21,4 @@ strftime() - Module
 .
 .
 .
-.
 many more
