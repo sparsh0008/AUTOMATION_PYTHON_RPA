@@ -1,5 +1,4 @@
 # Open Browser In The New Tab Whatsapp to send the message
-
 import pywhatkit
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -7,15 +6,14 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import time
 
-# # Enter Phone Number
+# Below code is used to send Message on whatsapp automatically by using pywhatkit
+# Enter Phone Number
 # phone1 = input("Enter the contact Number : ")
 # PhoneNumber1 = "+91" + phone1
 # print(PhoneNumber1)
 # pywhatkit.sendwhatmsg(PhoneNumber1, "Automation Testing", 12, 24)
 
-# Upper code is used to send Message on whatsapp automatically by using pywhatkit module but now the same should be done
-# by selenium
-
+# Below code is used to send Message on whatsapp automatically by using Selenium module
 phone = input("Enter the contact Number : ")
 PhoneNumber = "+91" + phone
 MessageToSend = "Good Morning today is %A"
