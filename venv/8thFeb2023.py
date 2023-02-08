@@ -1,4 +1,4 @@
-# Web Scrapping Using Selenium and Pandas by NOT Opening the Browser
+# Web Scrapping Using Selenium and Pandas Without Opening the Browser Automatically
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
