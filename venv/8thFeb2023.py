@@ -37,5 +37,5 @@ dataFrame = pd.DataFrame(dictionary_list)
 # Using PANDAS Created File news.csv and Enter the data into it
 dataFrame.to_csv('NewsWithoutOpenBrowser.csv')
 
-# This is terminate the browser
+# This is to terminate the browser
 driver.quit()
