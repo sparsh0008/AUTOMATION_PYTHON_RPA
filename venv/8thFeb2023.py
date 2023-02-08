@@ -5,6 +5,18 @@ from selenium.webdriver.chrome.service import Service
 import pandas as pd
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from _datetime import datetime
+import os
+import sys
+
+# This is to create exe of this program
+application_path = os.path.dirname(sys.executable)
+
+# This is for checking the system date
+now = datetime.now()
+dt = now.strftime("%m%d%Y")
+
+# This is for NOT OPENING the Chrome Browser
 option = Options()
 option.headless = True
 
@@ -35,7 +47,9 @@ dictionary_list = {'Title': title_list, 'Subtitle': subtitle_list, 'Link': link_
 dataFrame = pd.DataFrame(dictionary_list)
 
 # Using PANDAS Created File news.csv and Enter the data into it
-dataFrame.to_csv('NewsWithoutOpenBrowser.csv')
+filename = f'NewsWithoutOpenBrowser_{dt}.csv'
+finalPath = os.path.join(application_path, filename)
+dataFrame.to_csv(finalPath)
 
 # This is to terminate the browser
 driver.quit()
