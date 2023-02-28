@@ -10,7 +10,7 @@
 # print("QUERY - {0} ".format(tpl.query))
 # print("GET URL - {0} ".format(tpl.geturl()))
 
-
+# SERVER SIDE
 import socket
 
 host = "localhost"
