@@ -23,7 +23,7 @@ s.listen(1)
 c, addr = s.accept()
 print(str(addr))
 
-s.send(b"Hello how are you")
+
 msg = "I am Fine"
 c.send(msg.encode())
 c.close()
