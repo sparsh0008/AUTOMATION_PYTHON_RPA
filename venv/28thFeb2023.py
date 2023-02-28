@@ -1,3 +1,4 @@
+# CLIENT SIDE
 import socket
 
 host = "localhost"
